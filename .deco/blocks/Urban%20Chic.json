@@ -3,7 +3,7 @@
   "colorScheme": "any",
   "buttonStyle": {
     "--border-btn": "1px",
-    "--rounded-btn": "0",
+    "--rounded-btn": "0.4rem",
     "--btn-focus-scale": "0.95",
     "--animation-btn": "0.25s"
   },

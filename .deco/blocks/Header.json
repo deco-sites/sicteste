@@ -1,1 +1,47 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[],"buttons":[]}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "Soluções Cloud",
+        "url": "/solucoes-cloud"
+      },
+      {
+        "label": "Preço",
+        "url": "/preco"
+      },
+      {
+        "label": "DataCenters",
+        "url": "data-centers/"
+      },
+      {
+        "label": "Blog",
+        "url": "/blog/"
+      },
+      {
+        "label": "Contato",
+        "url": "/contato"
+      }
+    ],
+    "buttons": [
+      {
+        "id": "login",
+        "href": "https://app.paas.saveincloud.net.br/",
+        "text": "LOGIN",
+        "outline": true
+      },
+      {
+        "id": "trial",
+        "href": "https://register.saveincloud.com/geral/site",
+        "text": "TESTE GRÁTIS POR 14 DIAS"
+      }
+    ]
+  },
+  "logo": {
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/sicteste/91bf230d-7355-4750-8f3f-a47d5fa90fe8/images-removebg-preview.png"
+  }
+}
