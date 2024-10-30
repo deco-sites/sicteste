@@ -11,7 +11,8 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/BlogTitle.tsx"
+        "__resolveType": "site/sections/BlogTitle.tsx",
+        "title": "<p>12</p>"
       }
     },
     {

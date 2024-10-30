@@ -3006,9 +3006,6 @@ input.tab:checked + .tab-content,
 .max-w-\[600px\] {
   max-width: 600px;
 }
-.max-w-\[790px\] {
-  max-width: 790px;
-}
 .max-w-\[80px\] {
   max-width: 80px;
 }

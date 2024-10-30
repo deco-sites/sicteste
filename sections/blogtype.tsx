@@ -34,7 +34,7 @@ export default function BlogPost({
           <img
             fetchPriority="high"
             src={image}
-            className={`w-full h-[${imageHeight}] object-cover max-w-[790px]`}
+            className={`w-full h-[${imageHeight}] object-cover`}
             alt={imageAlt}
             decoding="async"
             style={{ maxHeight: imageHeight }}
