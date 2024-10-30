@@ -28,7 +28,7 @@ export default function BlogPost({
   content = "Download PostgreSQL 9.6 O PostgreSQL 9.6, lançado em setembro de 2016, trouxe várias melhorias em desempenho e escalabilidade, incluindo consultas paralelas para indexação e suporte a consultas de janela mais avançadas. Esta versão foi descontinuada em novembro de 2021, mas é possível fazer o PostgreSQL download 9.6 abaixo: FAZER DOWNLOAD", // Texto padrão
 }: Props) {
   return (
-    <div className="qloud-blog-box bg-white shadow-md rounded-lg overflow-hidden w-full p-4 md:w-3/4 lg:ml-4">
+    <div className="qloud-blog-box bg-white shadow-md rounded-lg overflow-hidden w-full p-4 md:w-1/3 lg:ml-4">
       <div className="qloud-blog-image clearfix relative w-full">
         <a className="post-thumbnail w-full" href={postLink} aria-hidden="true">
           <img
