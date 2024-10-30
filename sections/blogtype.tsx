@@ -10,6 +10,7 @@ interface Props {
   buttonColor?: string;
   buttonTextColor?: string;
   buttonText?: string;
+  content?: string; // Nova propriedade para o conteúdo do blog
 }
 
 export default function BlogPost({
@@ -22,9 +23,10 @@ export default function BlogPost({
   buttonColor = "#0091FF",
   buttonTextColor = "#FFFFFF",
   buttonText = "SAIBA MAIS",
+  content = "Download PostgreSQL 9.6 O PostgreSQL 9.6, lançado em setembro de 2016, trouxe várias melhorias em desempenho e escalabilidade, incluindo consultas paralelas para indexação e suporte a consultas de janela mais avançadas. Esta versão foi descontinuada em novembro de 2021, mas é possível fazer o PostgreSQL download 9.6 abaixo: FAZER DOWNLOAD", // Texto padrão
 }: Props) {
   return (
-    <div className="qloud-blog-box mx-auto bg-white shadow-md rounded-lg overflow-hidden w-1/2">
+    <div className="qloud-blog-box bg-white shadow-md rounded-lg overflow-hidden w-full p-4 md:w-3/4 lg:w-3/4 mx-auto">
       <div className="qloud-blog-image clearfix relative">
         <a className="post-thumbnail" href={postLink} aria-hidden="true">
           <img
@@ -41,7 +43,7 @@ export default function BlogPost({
       <div className="qloud-blog-detail p-4 relative">
         <a
           href={categoryLink}
-          className="px-4 py-2 rounded-md font-bold text-sm uppercase" // Margem inferior já aplicada aqui
+          className="px-4 py-2 rounded-md font-bold text-sm uppercase"
           style={{
             backgroundColor: buttonColor,
             color: buttonTextColor,
@@ -57,7 +59,7 @@ export default function BlogPost({
 
         <div className="blog-content mb-4">
           <p>
-            Download PostgreSQL 9.6 O PostgreSQL 9.6, lançado em setembro de 2016, trouxe várias melhorias em desempenho e escalabilidade, incluindo consultas paralelas para indexação e suporte a consultas de janela mais avançadas. Esta versão foi descontinuada em novembro de 2021, mas é possível fazer o PostgreSQL download 9.6 abaixo: FAZER DOWNLOAD
+            {content} {/* Usando a nova prop para o conteúdo do blog */}
           </p>
         </div>
         <div className="blog-footer">

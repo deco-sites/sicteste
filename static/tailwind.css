@@ -2900,9 +2900,6 @@ input.tab:checked + .tab-content,
   min-height: -moz-min-content;
   min-height: min-content;
 }
-.w-1\/2 {
-  width: 50%;
-}
 .w-12 {
   width: 3rem;
 }
@@ -3850,6 +3847,10 @@ input.tab:checked + .tab-content,
     width: 50%;
   }
 
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
   .md\:max-w-6xl {
     max-width: 72rem;
   }
@@ -3919,6 +3920,10 @@ input.tab:checked + .tab-content,
 
   .lg\:w-2\/5 {
     width: 40%;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
   }
 
   .lg\:w-\[40\%\] {
