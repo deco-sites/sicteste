@@ -5,27 +5,13 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "Header"
+        "__resolveType": "site/sections/headerSIC.tsx"
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/BlogTitle.tsx",
-        "title": "Blog SaveinCloud"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/blogtype.tsx",
-        "imageAlt": "1111"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/blogtype.tsx"
+        "__resolveType": "site/sections/blogTitle+SearchBar.tsx"
       }
     }
   ],
