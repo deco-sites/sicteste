@@ -18,7 +18,6 @@ export default function BlogPost({
   title = "Download PostgreSQL 9.6",
   image = "https://saveincloud.com/wp-content/uploads/2024/10/download-postgresql-9-6.png",
   imageAlt = "Download PostgreSQL 9.6",
-  imageWidth = "100%",
   imageHeight = "200px",
   postLink = "https://saveincloud.com/pt/blog/banco-de-dados/download-postgresql-9-6/",
   category = "BANCO DE DADOS",
@@ -30,15 +29,15 @@ export default function BlogPost({
 }: Props) {
   return (
     <div className="qloud-blog-box bg-white shadow-md rounded-lg overflow-hidden w-full p-4 md:w-3/4 lg:ml-4">
-      <div className="qloud-blog-image clearfix relative">
-        <a className="post-thumbnail" href={postLink} aria-hidden="true">
+      <div className="qloud-blog-image clearfix relative w-full">
+        <a className="post-thumbnail w-full" href={postLink} aria-hidden="true">
           <img
             fetchPriority="high"
             src={image}
-            className={`w-full h-[${imageHeight}] object-cover max-w-[790px]`} // Usando props para largura e altura
+            className={`w-full h-[${imageHeight}] object-cover max-w-[790px]`}
             alt={imageAlt}
             decoding="async"
-            style={{ maxHeight: imageHeight }} // Limite de altura com prop
+            style={{ maxHeight: imageHeight }}
           />
         </a>
       </div>
