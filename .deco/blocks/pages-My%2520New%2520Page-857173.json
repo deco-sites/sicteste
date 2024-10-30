@@ -7,6 +7,25 @@
       "section": {
         "__resolveType": "Header"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/BlogTitle.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/blogtype.tsx",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/sicteste/3a1cce8f-e04c-4340-84ec-b43c60f36d4b/A-banner-featuring-the-emblem-of-a-popular-open-source-database-system"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/blogtype.tsx"
+      }
     }
   ],
   "seo": {
