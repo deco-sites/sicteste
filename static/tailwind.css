@@ -2851,9 +2851,6 @@ input.tab:checked + .tab-content,
 .h-\[3px\] {
   height: 3px;
 }
-.h-auto {
-  height: auto;
-}
 .h-full {
   height: 100%;
 }
@@ -3008,6 +3005,9 @@ input.tab:checked + .tab-content,
 }
 .max-w-\[600px\] {
   max-width: 600px;
+}
+.max-w-\[790px\] {
+  max-width: 790px;
 }
 .max-w-\[80px\] {
   max-width: 80px;
@@ -3898,6 +3898,10 @@ input.tab:checked + .tab-content,
     margin-right: auto;
   }
 
+  .lg\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -3920,10 +3924,6 @@ input.tab:checked + .tab-content,
 
   .lg\:w-2\/5 {
     width: 40%;
-  }
-
-  .lg\:w-3\/4 {
-    width: 75%;
   }
 
   .lg\:w-\[40\%\] {

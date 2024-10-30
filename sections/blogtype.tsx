@@ -11,12 +11,15 @@ interface Props {
   buttonTextColor?: string;
   buttonText?: string;
   content?: string; // Nova propriedade para o conteúdo do blog
+  imageHeight?: string; // Nova prop para altura da imagem
 }
 
 export default function BlogPost({
   title = "Download PostgreSQL 9.6",
   image = "https://saveincloud.com/wp-content/uploads/2024/10/download-postgresql-9-6.png",
   imageAlt = "Download PostgreSQL 9.6",
+  imageWidth = "100%",
+  imageHeight = "200px",
   postLink = "https://saveincloud.com/pt/blog/banco-de-dados/download-postgresql-9-6/",
   category = "BANCO DE DADOS",
   categoryLink = "https://saveincloud.com/pt/blog/category/banco-de-dados/",
@@ -26,17 +29,16 @@ export default function BlogPost({
   content = "Download PostgreSQL 9.6 O PostgreSQL 9.6, lançado em setembro de 2016, trouxe várias melhorias em desempenho e escalabilidade, incluindo consultas paralelas para indexação e suporte a consultas de janela mais avançadas. Esta versão foi descontinuada em novembro de 2021, mas é possível fazer o PostgreSQL download 9.6 abaixo: FAZER DOWNLOAD", // Texto padrão
 }: Props) {
   return (
-    <div className="qloud-blog-box bg-white shadow-md rounded-lg overflow-hidden w-full p-4 md:w-3/4 lg:w-3/4 mx-auto">
+    <div className="qloud-blog-box bg-white shadow-md rounded-lg overflow-hidden w-full p-4 md:w-3/4 lg:ml-4">
       <div className="qloud-blog-image clearfix relative">
         <a className="post-thumbnail" href={postLink} aria-hidden="true">
           <img
             fetchPriority="high"
-            width="790"
-            height="200"
             src={image}
-            className="w-full h-auto"
+            className={`w-full h-[${imageHeight}] object-cover max-w-[790px]`} // Usando props para largura e altura
             alt={imageAlt}
             decoding="async"
+            style={{ maxHeight: imageHeight }} // Limite de altura com prop
           />
         </a>
       </div>
